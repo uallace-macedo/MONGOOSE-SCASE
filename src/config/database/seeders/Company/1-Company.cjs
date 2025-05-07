@@ -1,8 +1,8 @@
-import bcrypt from 'bcryptjs';
+const bcrypt = require('bcryptjs');
 
-export default {
+module.exports = {
   cnpj: 12345678,
-  corporte_name: 'administrator',
+  corporate_name: 'administrator',
   name: 'administrator',
   email: 'administrator@administrator.com',
   password_hash: bcrypt.hashSync('admin', 8),

@@ -49,7 +49,7 @@ const CompanyModel = new mongoose.Schema({
     }
   },
   telephone: {
-    comercial_phone: {
+    commercial_phone: {
       type: Number,
       required: true,
     },

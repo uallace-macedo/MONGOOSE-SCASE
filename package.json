@@ -11,8 +11,10 @@
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.14.1",
-    "mongoose-paginate-v2": "^1.9.0"
+    "mongoose-paginate-v2": "^1.9.0",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
