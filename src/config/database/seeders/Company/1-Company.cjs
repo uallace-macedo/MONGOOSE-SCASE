@@ -13,7 +13,7 @@ module.exports = {
     state: 'BR'
   },
   telephone: {
-    commercial_telephone: 123456789,
+    commercial_phone: 123456789,
     cellphone: 123456789,
   },
   admin: true,
