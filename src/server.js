@@ -1,3 +1,5 @@
 import app from './app.js';
+import envConfig from './configs/env.config.js';
 
-app.listen(3000);
+const PORT = envConfig.SERVER_PORT
+app.listen(PORT, () => console.log(`[SV]: Running as http://localhost:${PORT}`));
