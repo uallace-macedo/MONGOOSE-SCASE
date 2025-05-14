@@ -51,6 +51,10 @@ const CompanySchema = new mongoose.Schema({
         commercial: {
             type: Number,
             required: true
+        },
+        cellphone: {
+            type: Number,
+            required: true
         }
     },
     admin: {
