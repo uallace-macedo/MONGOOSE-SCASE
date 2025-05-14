@@ -17,6 +17,10 @@ Uma plataforma onde empresas podem criar anúncios de produtos e serviços de fo
 - jsonwebtoken – autenticação com JWT 🔑
 - mongoose-paginate-v2 – paginação de dados
 - Yup – validação de dados do lado do backend ✅
+- mongo-seeding-cli – ferramenta de seed para MongoDB, útil pra popular o banco com dados iniciais 🌱📂
+    ```bash
+        seed -u 'mongodb://127.0.0.1:27017/db_name' --drop-database ./src/configs/database/seeders
+    ```
 
 ### 🛠️ Dev Dependencies:
 - Nodemon – recarrega o servidor automaticamente no modo dev 🔁

@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import envConfig from './env.config.js';
+import envConfig from '../env.config.js';
 
 class Database {
     constructor() {
