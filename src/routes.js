@@ -10,10 +10,12 @@ routes.post('/session', SessionController.session);
 routes.post('/company', CompanyController.insert);
 
 routes.use(authMiddleware); // All routes below require authentication
-
 routes.get('/', (req, res) =>  res.json({ idCompany: req.idCompany, cnpjCompany: req.cnpjCompany }));
+routes.put('/company', CompanyController.updateCompany);
 
 routes.use(adminMiddleware); // Admin routes
 routes.get('/company', CompanyController.index);
+routes.get('/company/:id_company', CompanyController.details);
+routes.put('/company/:id_company', CompanyController.updateCompanyStatus);
 
 export default routes;
