@@ -41,6 +41,21 @@ class CompanyController {
         const companyData = await Company.create(req.body);
 
         return res.status(201).json(companyData);
+    };
+
+    async index (req, res) {
+        const { page = 1 } = req.query;
+        const companyData = await Company.paginate(
+            {},
+            {
+                page,
+                limit: 5,
+                sort: { name: 'asc' },
+                select: 'cnpj name email telephone.commercial'
+            }
+        )
+
+        return res.json(companyData);
     }
 }
 
